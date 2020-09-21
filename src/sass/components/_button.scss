@@ -1,0 +1,18 @@
+.button {
+    color: white;
+    background: linear-gradient(to right, $color-primary, $color-secondary);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 1.5rem 5rem;
+    border-radius: 5rem;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover {
+        @include button-hover-effect;
+    }
+
+    &:active {
+        @include button-active-effect
+    }
+}
