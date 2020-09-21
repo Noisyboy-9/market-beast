@@ -1,0 +1,16 @@
+.hero {
+
+    &__image {
+        grid-column: col-start 6 / full-end;
+        grid-row: 1 / span 2;
+        z-index: -1;
+        position: relative;
+
+        svg {
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
