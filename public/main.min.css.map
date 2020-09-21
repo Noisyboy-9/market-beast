@@ -2,7 +2,10 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../src/sass/main.scss"
+        "../src/sass/main.scss",
+        "../src/sass/abstracts/_mixins.scss",
+        "../src/sass/abstracts/_variables.scss",
+        "../src/sass/layout/_grid.scss"
     ],
     "names": [],
     "file": "main.min.css"
