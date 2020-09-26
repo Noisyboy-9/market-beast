@@ -1,0 +1,17 @@
+@mixin button-hover-effect {
+    transform: translateY(-3px);
+    box-shadow: 2rem 2rem 3rem rgba($color-primary, 0.3);
+}
+
+@mixin button-active-effect {
+    transform: translateY(-1px);
+    box-shadow: 1rem 1rem 1rem rgba($color-primary, 0.3);
+}
+
+@mixin card-shadow {
+    box-shadow: 0 1rem 2rem rgba($color-primary, 0.1);
+}
+
+@mixin card-hover-shadow {
+    box-shadow: 0 2rem 3rem rgba($color-primary, 0.4);
+}

@@ -1,0 +1,55 @@
+.header {
+    grid-row: 1 / span 1;
+    grid-column: col-start 1 / col-end 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background: $color-primary;
+
+    &__logo {
+        height: 7rem;
+        cursor: pointer;
+
+        svg {
+            height: 100%;
+        }
+    }
+
+    &__list {
+        font-size: 1.6rem;
+        list-style: none;
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+        overflow-x: hidden;
+        padding: 0.5rem 0;
+
+        &:not(:last-child) {
+            margin-right: 8rem;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            left: -100%;
+            bottom: 0%;
+            background-color: white;
+            transition: all 0.2s;
+        }
+
+        &:hover::before {
+            left: 0;
+        }
+    }
+
+    &__link {
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+    }
+}

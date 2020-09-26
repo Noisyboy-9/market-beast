@@ -1,0 +1,49 @@
+.u {
+    &--margin {
+        &-bottom {
+            &-extra-small {
+                margin-bottom: 2rem;
+            }
+
+            &-small {
+                margin-bottom: 3rem;
+            }
+
+            &-medium {
+                margin-bottom: 5rem;
+            }
+
+            &-large {
+                margin-bottom: 7rem;
+            }
+        }
+
+        &-top {
+            &-extra-small {
+                margin-top: 2rem;
+            }
+
+            &-small {
+                margin-top: 3rem;
+            }
+
+            &-medium {
+                margin-top: 5rem;
+            }
+
+            &-large {
+                margin-top: 7rem;
+            }
+
+            &-extra-large {
+                margin-top: 10rem;
+            }
+        }
+    }
+
+    &--display {
+        &-block {
+            display: block;
+        }
+    }
+}

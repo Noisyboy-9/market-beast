@@ -1,7 +1,18 @@
 // abstracts
 @import './abstracts/mixins';
 @import './abstracts/variables';
+@import './abstracts/utilities';
+
 // basics
-@import './basics/baiscs';
+@import './basics/basics';
+@import './basics/typography';
+
+// components
+@import './components/button';
+
 // layout
-@import './layout/grid'
+@import './layout/grid';
+@import './layout/header';
+
+// pages
+@import './pages/home';

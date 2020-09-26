@@ -1,0 +1,28 @@
+.heading-primary {
+    color: $color-heading;
+    font-size: 7.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.heading-secondary {
+    color: $color-heading;
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $color-paragraph;
+
+    &--text-light {
+        color: $color-primary;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+}

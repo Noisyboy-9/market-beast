@@ -1,0 +1,5 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: [full-start] 17rem repeat(12, [col-start] 1fr [col-end]) 17rem [full-end];
+    grid-template-rows: 8rem calc(100vh - 8rem) max-content min-content max-content max-content min-content min-content min-content min-content;
+}
