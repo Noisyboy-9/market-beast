@@ -6,6 +6,34 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+
+
+        @media only screen and (max-width: 81.25em) {
+            grid-column: col-start 1 / col-end 7;
+
+            justify-content: start;
+            margin-top: 15rem;
+        }
+
+        @media screen and (max-width: 75em) {
+            margin-top: 22rem;
+        }
+
+        @media only screen and (max-width: 68.75em) {
+            grid-column: col-start 1 / col-end 5;
+        }
+
+        @media only screen and (max-width: 62.5em) {
+            grid-column: col-start / col-end 12;
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media only screen and (max-width: 37.5em) {
+            margin-bottom: 15rem;
+        }
     }
 
     &__image {
@@ -15,6 +43,14 @@
         position: relative;
         object-fit: cover;
         overflow: hidden;
+
+        @media only screen and (max-width: 68.75em) {
+            grid-column: col-start 5 / full-end;
+        }
+
+        @media only screen and (max-width: 62.5em) {
+            display: none;
+        }
 
         svg {
             position: absolute;
@@ -34,6 +70,10 @@
     &__paragraph {
         width: 80%;
         text-align: left;
+
+        @media only screen and (max-width: 62.5em) {
+            text-align: center;
+        }
     }
 }
 
@@ -42,6 +82,11 @@
         margin-top: 5rem;
         grid-row: 3 / span 1;
         grid-column: full-start / col-end 5;
+
+
+        @media only screen and (max-width: 62.5em) {
+            grid-row: 4 / span 1;
+        }
     }
 
     &__content {
@@ -53,6 +98,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+
+        @media only screen and (max-width: 62.5em) {
+            grid-row: 5 / span 1;
+        }
     }
 }
 
@@ -226,6 +275,7 @@
     &__links {
         width: fit-content;
         margin: 6rem auto;
+
         & ul {
             display: flex;
             gap: 10rem;
@@ -242,6 +292,7 @@
         color: white;
         position: relative;
         overflow-x: clip;
+
         // background-color: red;
         &::before {
             content: "";

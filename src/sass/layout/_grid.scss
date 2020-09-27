@@ -2,4 +2,17 @@
     display: grid;
     grid-template-columns: [full-start] 17rem repeat(12, [col-start] 1fr [col-end]) 17rem [full-end];
     grid-template-rows: 8rem calc(100vh - 8rem) max-content min-content max-content max-content min-content min-content min-content min-content;
+
+    @media only screen and (max-width: 81.25em) {
+        grid-template-columns: [full-start] 12rem repeat(12, [col-start] 1fr [col-end]) 12rem [full-end];
+    }
+
+    @media only screen and (max-width: 62.5em) {
+        grid-template-rows: 8rem max-content max-content max-content min-content max-content max-content min-content min-content min-content min-content;
+        grid-template-columns: [full-start] 10rem repeat(12, [col-start] 1fr [col-end]) 10rem [full-end];
+    }
+
+    @media only screen and (max-width: 50em) {
+        grid-template-columns: [full-start] 5rem repeat(12, [col-start] 1fr [col-end]) 5rem [full-end];
+    }
 }

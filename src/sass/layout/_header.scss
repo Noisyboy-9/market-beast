@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // background: $color-primary;
 
     &__logo {
         height: 7rem;
@@ -12,23 +11,43 @@
 
         svg {
             height: 100%;
+            width: 100%;
         }
+
+        @media only screen and (max-width: 37.5em) {
+            width: 100%;
+            text-align: center;
+        }
+
     }
 
     &__list {
         font-size: 1.6rem;
         list-style: none;
         display: flex;
+        gap: 8rem;
+
+        @media screen and (max-width: 68.75em) {
+            gap: 6rem;
+        }
+
+        @media only screen and (max-width: 50em) {
+            gap: 4rem;
+        }
+
+        @media only screen and (max-width: 43.75em) {
+            gap: 2rem;
+        }
+
+        @media only screen and (max-width: 37.5em) {
+            display: none;
+        }
     }
 
     &__item {
         position: relative;
         overflow-x: hidden;
         padding: 0.5rem 0;
-
-        &:not(:last-child) {
-            margin-right: 8rem;
-        }
 
         &::before {
             content: '';
@@ -40,6 +59,10 @@
             bottom: 0%;
             background-color: white;
             transition: all 0.2s;
+
+            @media only screen and (max-width: 62.5em) {
+                background-color: $color-heading;
+            }
         }
 
         &:hover::before {
@@ -51,5 +74,9 @@
         text-transform: uppercase;
         color: white;
         text-decoration: none;
+
+        @media only screen and (max-width: 62.5em) {
+            color: $color-heading;
+        }
     }
 }
