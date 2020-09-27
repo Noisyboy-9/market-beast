@@ -3,8 +3,16 @@
     grid-template-columns: [full-start] 17rem repeat(12, [col-start] 1fr [col-end]) 17rem [full-end];
     grid-template-rows: 8rem calc(100vh - 8rem) max-content min-content max-content max-content min-content min-content min-content min-content;
 
+    @media only screen and (max-width:93.75em) {
+        grid-template-rows: 8rem 100vh max-content min-content max-content max-content min-content min-content min-content min-content;
+    }
+
     @media only screen and (max-width: 81.25em) {
         grid-template-columns: [full-start] 12rem repeat(12, [col-start] 1fr [col-end]) 12rem [full-end];
+    }
+
+    @media only screen and (max-width: 68.75em) {
+        grid-template-rows: 8rem calc(100vh - 65rem) max-content min-content max-content max-content min-content min-content min-content min-content;
     }
 
     @media only screen and (max-width: 62.5em) {
